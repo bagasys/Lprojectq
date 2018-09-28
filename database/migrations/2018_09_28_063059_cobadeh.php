@@ -19,6 +19,7 @@ class Cobadeh extends Migration
             $table->string('nama');
             $table->string('nrp');
             $table->string('no_hp');
+            $table->string('ruangan');
             $table->timestamp('jam_mulai')->useCurrent();
             $table->timestamp('jam_berakhir')->useCurrent();
             $table->timestamps();
