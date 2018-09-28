@@ -17,6 +17,7 @@ class Coba extends Migration
         Schema::create('jadwal', function (Blueprint $table) {
             $table->increments('id_jadwal');
             $table->date('tanggal');
+            $table->string('ruangan');
             $table->timestamp('jam_mulai')->useCurrent();
             $table->timestamp('jam_berakhir')->useCurrent();
             $table->timestamps();
